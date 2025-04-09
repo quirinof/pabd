@@ -1,6 +1,6 @@
 # Projeto e Aministração de Bancos de Dados
 
-## Descrição: Esse repositório contém tarefas relacionadas ao componente curricular PABD do curso de BSI/UFRN
+## Esse repositório contém tarefas relacionadas ao componente curricular PABD do curso de BSI/UFRN
 
 **Matrícula**: 20220061520
 
