@@ -37,19 +37,64 @@ INSERT INTO funcionario (nome, sexo, dt_nasc, salario, cod_depto) VALUES
 ('Joao Pedro', 'M', '1987-05-05', 6200.00, 4);
 
 INSERT INTO projeto (nome, descricao, cod_depto, cod_responsavel, data_inicio, data_fim) VALUES
-('SIGpro', 'Desenvolvimento de um sistema de gerenciamento de projetos', 1, 6, '2023-01-01', '2023-12-31'),
-('Mapeamento Urbano', 'Projeto de mapeamento das regiões urbanas', 2, 8, '2023-03-01', '2023-10-01'),
-('Acervo Digital', 'Digitalização de documentos históricos', 3, 10, '2023-02-15', '2023-09-30'),
-('Matemática na Prática', 'Oficinas interativas de matemática nas escolas públicas', 4, 18, '2023-04-01', '2023-11-15'),
-('Observatório Global', 'Monitoramento de relações internacionais em tempo real', 5, 13, '2023-05-01', '2023-12-20');
+('SIGpro', 'Desenvolvimento de um sistema de gerenciamento de projetos', 1, 6, '2025-01-01', '2025-12-31'),
+('Mapeamento Urbano', 'Projeto de mapeamento das regiões urbanas', 2, 8, '2025-03-01', '2025-10-01'),
+('Acervo Digital', 'Digitalização de documentos históricos', 3, 10, '2025-02-15', '2025-09-30'),
+('Matemática na Prática', 'Oficinas interativas de matemática nas escolas públicas', 4, 18, '2025-04-01', '2025-11-15'),
+('Observatório Global', 'Monitoramento de relações internacionais em tempo real', 5, 13, '2025-05-01', '2025-12-20');
 
 INSERT INTO atividade (nome, descricao, cod_responsavel, data_inicio, data_fim) VALUES
-('Análise de Requisitos', 'Análise detalhada dos requisitos do sistema', 7, '2023-01-03', '2023-01-20'),
-('Modelagem de Dados', 'Criação do modelo relacional do banco de dados', 16, '2023-01-21', '2023-02-05'),
-('Desenvolvimento Backend', 'Implementação das regras de negócio', 16, '2023-02-06', '2023-03-15'),
-('Desenvolvimento Frontend', 'Criação da interface do usuário', 6, '2023-03-16', '2023-04-10');
+('Análise de Requisitos', 'Análise detalhada dos requisitos do sistema', 7, '2025-01-03', '2025-01-20'),
+('Modelagem de Dados', 'Criação do modelo relacional do banco de dados', 16, '2025-01-21', '2025-02-05'),
+('Desenvolvimento Backend', 'Implementação das regras de negócio', 16, '2025-02-06', '2025-03-15'),
+('Desenvolvimento Frontend', 'Criação da interface do usuário', 6, '2025-03-16', '2025-04-10');
 
 INSERT INTO atividade_projeto (cod_projeto, cod_atividade) VALUES
-(1, 1);
+(1, 1),
+(1, 2),
+(1, 3),
+(1, 4);
+
+INSERT INTO atividade (nome, descricao, cod_responsavel, data_inicio, data_fim) VALUES
+('Coleta de Dados', 'Recolhimento de dados geográficos', 9, '2025-03-01', '2025-03-31'),
+('Análise de Dados', 'Análise dos dados coletados', 9, '2025-04-01', '2025-04-30'),
+('Relatórios', 'Geração de relatórios sobre as regiões mapeadas', 11, '2025-05-01', '2025-05-31'),
+('Publicação', 'Publicação dos mapas e relatórios', 11, '2025-06-01', '2025-06-30');
+
+INSERT INTO atividade_projeto (cod_projeto, cod_atividade) VALUES
+(2, 5),
+(2, 6),
+(2, 7),
+(2, 8);
+
+INSERT INTO atividade (nome, descricao, cod_responsavel, data_inicio, data_fim) VALUES
+('Digitalização', 'Digitalização de documentos históricos', 12, '2025-02-01', '2025-02-28'),
+('Classificação', 'Classificação dos documentos digitalizados', 12, '2025-03-01', '2025-03-31'),
+('Indexação', 'Indexação dos documentos para busca', 14, '2025-04-01', '2025-04-30'),
+('Acesso Online', 'Disponibilização dos documentos online', 14, '2025-05-01', '2025-05-31');
+
+INSERT INTO atividade_projeto (cod_projeto, cod_atividade) VALUES
+(3, 9),
+(3, 10),
+(3, 11),
+(3, 12);
+
+INSERT INTO atividade (nome, descricao, cod_responsavel, data_inicio, data_fim) VALUES
+('Planejamento', 'Planejamento das oficinas de matemática', 15, '2025-04-01', '2025-04-30'),
+('Aplicação', 'Aplicação das oficinas nas escolas públicas', 15, '2025-05-01', '2025-05-31');
+
+INSERT INTO atividade_projeto (cod_projeto, cod_atividade) VALUES
+(4, 13),
+(4, 14);
+
+INSERT INTO atividade (nome, descricao, cod_responsavel, data_inicio, data_fim) VALUES
+('Monitoramento', 'Monitoramento das relações internacionais', 19, '2025-05-01', '2025-05-31'),
+('Análise', 'Análise dos dados de monitoramento', 19, '2025-06-01', '2025-06-30');
+
+INSERT INTO atividade_projeto (cod_projeto, cod_atividade) VALUES
+(5, 15),
+(5, 16);
+
+
 
 
