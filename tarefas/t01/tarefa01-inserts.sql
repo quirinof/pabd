@@ -5,7 +5,9 @@ INSERT INTO departamento (descricao, cod_gerente) VALUES
 ('Departamento de Geografia', NULL),
 ('Departamento de História', NULL),
 ('Departamento de Matemática', NULL),
-('Departamento de Relações Internacionais', NULL);
+('Departamento de Relações Internacionais', NULL),
+('Departamento de Saúde', NULL),
+('Departamento de Sociologia', NULL);
 
 INSERT INTO funcionario (nome, sexo, dt_nasc, salario, cod_depto) VALUES
 ('Joao Silva', 'M', '1985-01-15', 5000.00, 1),
@@ -34,7 +36,9 @@ INSERT INTO funcionario (nome, sexo, dt_nasc, salario, cod_depto) VALUES
 ('Kelvin Belo', 'M', '1987-05-05', 7000.00, 1),
 ('Mario Bidon', 'M', '1992-04-30', 5500.00, 5),
 ('Luiz Bortoleto', 'M', '1987-05-05', 7000.00, 4),
-('Joao Pedro', 'M', '1987-05-05', 6200.00, 4);
+('Joao Pedro', 'M', '1987-05-05', 6200.00, 4),
+('Maria Aparecida', 'F', '1980-05-05', 6500.00, 7),
+('Daniel de Souza', 'F', '1990-12-11', 5200.00, 7);
 
 INSERT INTO projeto (nome, descricao, cod_depto, cod_responsavel, data_inicio, data_fim) VALUES
 ('SIGpro', 'Desenvolvimento de um sistema de gerenciamento de projetos', 1, 6, '2025-01-01', '2025-12-31'),
