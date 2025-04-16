@@ -29,7 +29,7 @@ Combina duas tabelas automaticamente com base em todas as colunas com o mesmo no
 ```sql
 SELECT *
 FROM funcionario
-CROSS JOIN projeto;
+NATURAL JOIN departamento;
 ```
 
 Isso vai unir funcionario e departamento onde as colunas com o mesmo nome (ex: cod_depto) forem iguais.
@@ -43,7 +43,7 @@ Combina todas as linhas de uma tabela com todas as linhas de outra tabela, resul
 ```sql
 SELECT *
 FROM funcionario
-CROSS JOIN departamento;
+CROSS JOIN projeto;
 ```
 
 Isso retornará cada funcionário combinado com cada projeto, independentemente de qualquer relação entre eles.
