@@ -13,5 +13,6 @@
 Execute o docker compose para subir o postgres e o pgadmin.
 
 ```bash
+cd pabd
 docker compose up -d
 ```
