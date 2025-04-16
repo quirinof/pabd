@@ -47,3 +47,7 @@ CROSS JOIN departamento;
 ```
 
 Isso retornará cada funcionário combinado com cada projeto, independentemente de qualquer relação entre eles.
+
+## Windows Functions no Postgres
+
+São um recurso para fazer cálculos sobre um conjunto de linhas relacionadas a uma linha específica — sem perder a linhas originais como ocorre com GROUP BY.
