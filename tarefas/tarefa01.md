@@ -33,3 +33,17 @@ CROSS JOIN projeto;
 ```
 
 Isso vai unir funcionario e departamento onde as colunas com o mesmo nome (ex: cod_depto) forem iguais.
+
+### Cross Join
+
+Combina todas as linhas de uma tabela com todas as linhas de outra tabela, resultando em uma tabela com todas as combinações possíveis entre as linhas das duas tabelas.
+
+**Exemplo**:
+
+```sql
+SELECT *
+FROM funcionario
+CROSS JOIN departamento;
+```
+
+Isso retornará cada funcionário combinado com cada projeto, independentemente de qualquer relação entre eles.
