@@ -6,6 +6,13 @@
 
 **[Inserção dos dados](https://github.com/quirinof/pabd/blob/main/tarefas/t01/tarefa01-inserts.sql)**
 
+**Exemplo para executar os scripts utilizando o Docker.**
+
+```bash
+cd pabd
+docker exec -i postgres psql -U quirino -d pabd < tarefas/t01/nome_do_arquivo.sql
+```
+
 ## Resolução das questões da lista
 
 **[Questão 1](https://github.com/quirinof/pabd/blob/main/tarefas/t01/tarefa01-q01.sql)**
