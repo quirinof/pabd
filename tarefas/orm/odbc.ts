@@ -20,12 +20,23 @@ async function main() {
     // `);
     // console.log("Atividade inserida");
 
-    await connection.query(`
-      UPDATE projeto
-      SET responsavel = 3
-      WHERE codigo = 2
+    // await connection.query(`
+    //   UPDATE projeto
+    //   SET responsavel = 3
+    //   WHERE codigo = 2
+    // `);
+    // console.log("Lider Atualizado");
+
+    const result = await connection.query(`
+      SELECT
+        p.nome AS projeto,
+        a.descricao AS atividade
+      FROM projeto p
+      LEFT JOIN atividade a ON p.codigo = a.projeto
+      ORDER BY p.nome, a.descricao
     `);
-    console.log("Lider Atualizado");
+
+    console.log(result);
 
     await connection.close();
   } catch (error) {
