@@ -13,9 +13,16 @@ async function main() {
   try {
     const connection = await odbc.connect(connectionString);
     console.log("Conectado");
+
+    await connection.query(`
+      INSERT INTO atividade (descricao, projeto, data_inicio, data_fim)
+      VALUES ('Nova Atividade Teste', 1, '2025-05-01', '2025-05-20')
+    `);
+    console.log("Atividade inserida");
+
     await connection.close();
-  } catch (err) {
-    console.error("Erro:", err);
+  } catch (error) {
+    console.error(error);
   }
 }
 
