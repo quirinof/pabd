@@ -14,11 +14,18 @@ async function main() {
     const connection = await odbc.connect(connectionString);
     console.log("Conectado");
 
+    // await connection.query(`
+    //   INSERT INTO atividade (descricao, projeto, data_inicio, data_fim)
+    //   VALUES ('Nova Atividade Teste', 1, '2025-05-01', '2025-05-20')
+    // `);
+    // console.log("Atividade inserida");
+
     await connection.query(`
-      INSERT INTO atividade (descricao, projeto, data_inicio, data_fim)
-      VALUES ('Nova Atividade Teste', 1, '2025-05-01', '2025-05-20')
+      UPDATE projeto
+      SET responsavel = 3
+      WHERE codigo = 2
     `);
-    console.log("Atividade inserida");
+    console.log("Lider Atualizado");
 
     await connection.close();
   } catch (error) {
