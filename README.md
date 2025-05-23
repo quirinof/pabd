@@ -8,11 +8,13 @@
 
 **Link para primeira tarefa**: [tarefa01](https://github.com/quirinof/pabd/tree/main/tarefas/tarefa01.md)
 
+**Link para segunda tarefa - ODBC e ORM**: [tarefa02](https://github.com/quirinof/pabd/tree/main/tarefas/tarefa-orm.md)
+
 ## Execução
 
-Execute o docker compose para subir o postgres e o pgadmin.
+Lembre de executar o docker compose para subir o postgres e o pgadmin em seus containers.
 
 ```bash
-cd pabd
+cd <diretorio-da-tarefa>
 docker compose up -d
 ```
