@@ -1,6 +1,15 @@
 # ODBC e ORM
 
+Atividade prática sobre odbc e orm com typescript
+
 ## Scripts
+
+- [Database - Create](https://github.com/quirinof/pabd/blob/main/tarefas/orm/scripts-db/create_tables.sql)
+- [Database - Insert](https://github.com/quirinof/pabd/blob/main/tarefas/orm/scripts-db/insert_tables.sql)
+- [ODBC - all tasks](https://github.com/quirinof/pabd/blob/main/tarefas/orm/tasks/odbc.ts)
+- [ORM - create activity](https://github.com/quirinof/pabd/blob/main/tarefas/orm/tasks/create-atv.ts)
+- [ORM - update project leader](https://github.com/quirinof/pabd/blob/main/tarefas/orm/tasks/update-project-leader.ts)
+- [ORM - list projects with activitys](https://github.com/quirinof/pabd/blob/main/tarefas/orm/tasks/find-projects-atv.ts)
 
 ## Resumo sobre ODBC
 
